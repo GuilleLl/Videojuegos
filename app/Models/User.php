@@ -47,4 +47,12 @@ class User extends Authenticatable
     public function hasRoles($role){
         return (Boolean) $this->roles()-> where('name',$role)->first();
     }
+
+    public function juegos(){
+        return $this->belongsToMany(Juegos::class);
+    }
+
+    public function adminlte_image(){
+        return 'https://picsum.photos/300/300';
+    }
 }
