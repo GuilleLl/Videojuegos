@@ -13,7 +13,7 @@
                 <div class="row d-flex justify-content-center">
             @forelse($juegos as $juego)
             <div class="card col-5 mx-3 mb-4 mt-4 row p-0 text-center bg-dark text-white">
-					<div class="card-header class col-12 d-flex justify-content-center " ><img class="img-fluid  border p-5 " src="{{$juego->Imagen}}">
+					<div class="card-header class col-12 d-flex justify-content-center " ><img class="img-fluid  border p-0 " src="{{$juego->Imagen}}">
                     
                     </div>
                     <h2 class=" text-center col-12">{{ $juego->Nombre }}</h2>

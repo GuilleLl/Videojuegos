@@ -25,33 +25,34 @@
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <link rel="shortcut icon" type="image/png" href="{{ asset('vendor/adminlte/dist/img/Logo.png') }}">
-    <link rel="shortcut icon" sizes="192x192" href="{{ asset('vendor/adminlte/dist/img/Logo.png') }}">
+    <link rel="shortcut icon" type="image/png" href="{{ asset('Logo.png') }}">
+    <link rel="shortcut icon" sizes="192x192" href="{{ asset('Logo.png') }}">
 </head>
 <body class="bg-secondary h-screen antialiased leading-none font-sans">
     <div id="app">
         <header class="bg-dark py-6">
-            <div class="container mx-auto flex justify-between  px-6">
+            <div class="container mx-auto flex justify-between  px-6 ">
                 <div class="flex justify-start">
-                    <img src="{{ asset('vendor/adminlte/dist/img/Logo.png') }}" style="width:30px;height:30px;">
-                    <a href="{{ url('/') }}" class="text-lg font-semibold text-gray-100 no-underline hover:text-orange-500">
+                    <img src="{{ asset('Logo.png') }}" style="width:30px;height:30px;"> 
+                    <a href="{{ url('/') }}" class="text-lg font-semibold text-gray-100 no-underline hover:text-orange-500 px-1 pt-2">
                         {{ config('app.name', 'Laravel') }}
                     </a>
                     @auth
-                    <a href="{{url('juegos')}}" class="text-lg font-semibold text-gray-100 no-underline hover:text-orange-500 px-5">
+                    <a href="{{url('juegos')}}" class="text-lg font-semibold text-gray-100 no-underline hover:text-orange-500 px-5 pt-2">
                         {{__('Juegos') }}
                     </a>
 
-                    <a href="{{url('portadas')}}" class="text-lg font-semibold text-gray-100 no-underline hover:text-orange-500 px-5">
+                    <a href="{{url('portadas')}}" class="text-lg font-semibold text-gray-100 no-underline hover:text-orange-500 px-5 pt-2">
                         {{__('Portadas') }}
                     </a>
 
-                    <a href="{{url('contacta')}}" class="text-lg font-semibold text-gray-100 no-underline hover:text-orange-500 px-5">
+                    <a href="{{url('contacta')}}" class="text-lg font-semibold text-gray-100 no-underline hover:text-orange-500 px-5 pt-2">
                         {{__('Contacta') }}
                     </a>
 
                     @endauth
                 </div>
+                
                 <nav class="space-x-4 text-gray-300 text-sm sm:text-base">
                     @guest
                         <a class="no-underline hover:underline  text-white" href="{{ route('login') }}">{{ __('Inicia Sesion') }}</a>

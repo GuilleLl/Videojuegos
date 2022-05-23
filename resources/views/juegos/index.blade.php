@@ -1,13 +1,13 @@
 @extends("layouts.app")
-
 @section("content")
+
     <div class="flex justify-center flex-wrap mt-5">
         <div class="text-center">
             <h1 class="mb-5">{{ __("Listado de juegos") }}</h1>
         </div>
     </div>
 
-    <table class="border-separate border-2 text-center border-gray-500 p-5" style="width: 100%">
+    <table class="border-separate text-center  p-5" style="width: 100%">
         <thead>
         <tr>
             <th class="px-4 py-2">{{ __("Nombre") }}</th>
@@ -45,5 +45,5 @@
            
         </div>
     @endif
-
 @endsection
+

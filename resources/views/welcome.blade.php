@@ -41,18 +41,18 @@
         </div>
         @endif
 
-        <div class="min-h-screen flex items-center justify-center flex-col px-5 mx-5">
-            <h1 class="text-center text-white">Mejores Juegos de la Historia</h1>
-            <div class="carousel slide carousel-fade px-5 mx-5" id="mi-carousel" data-bs-ride="carousel">
+        <div class="min-h-screen d-flex items-center justify-content-center flex-col px-5 mx-5 row">
+            <h1 class="text-center text-white col-12">Mejores Juegos de la Historia</h1>
+            <div class="carousel slide carousel-fade px-5 mx-5 col-7" id="mi-carousel" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="img-fluid" src="carrusel1.jpg" alt="">
+                        <img class="img-fluid " src="carrusel1.jpg" alt="">
                     </div>
                     <div class="carousel-item" data-bs-interval="5000">
-                        <img class="img-fluid" src="carrusel2.jpg" alt="">
+                        <img class="img-fluid " src="carrusel2.jpg" alt="">
                     </div>
                     <div class="carousel-item">
-                        <img class="img-fluid" src="carrusel3.jpg" alt="">
+                        <img class="img-fluid " src="carrusel3.jpg" alt="">
                     </div>
                 </div>
                 <!-- Controles -->
